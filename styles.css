@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: #ffffff;
+  color: #000000;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25em;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+nav h1:hover {
+  text-decoration: underline;
+}
+
+nav img {
+  height: 50px;
+  width: auto;
+}
+
+.background {
+  background-image: url("./background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 91vh;
+  text-align: center;
+  position: relative;
+}
+
+.background h1 {
+  color: white;
+  position: absolute;
+  bottom: 15rem;
+  font-size: 4em;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.background p {
+  color: white;
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 11rem;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.page-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-group h1 {
+  padding: 0 3em;
+}
+
+.other-pages {
+  color: #9f9f9f;
+}
+.signup-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup {
+  background-color: #133b47;
+  padding: 10px;
+  color: white;
+  border-radius: 3em;
+  margin-left: 2em;
+  width: 6em;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav img {
+    height: 20%;
+    width: auto;
+  }
+  nav {
+    max-width: 100vw;
+    height: 10vh;
+  }
+
+  nav h1 {
+    font-size: 0.5rem;
+  }
+
+  .background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
+  }
+  .background h1 {
+    bottom: 12rem;
+    font-size: 2rem;
+  }
+  .background p {
+    font-size: 0.6rem;
+    bottom: 10.5rem;
+  }
+  .signup {
+    width: 2.5rem;
+  }
+}
