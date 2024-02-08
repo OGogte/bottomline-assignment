@@ -11,6 +11,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
+  margin: 1em 0em;
 }
 
 nav h1 {
@@ -39,8 +40,12 @@ nav img {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   padding-bottom: 5em;
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
 }
 
 .background h1 {
@@ -62,7 +67,8 @@ nav img {
   align-items: flex-start;
 }
 
-.page-group h1, .signup-group h1 {
+.page-group h1,
+.signup-group h1 {
   padding: 1em;
 }
 
@@ -83,16 +89,17 @@ nav img {
 @media screen and (max-width: 768px) {
   nav {
     flex-wrap: wrap;
-    padding: 0.5em;
+    padding: 0.4em;
   }
 
   nav h1 {
-    font-size: 0.5em;
+    font-size: 0.6em;
     margin-bottom: 0.4em;
   }
 
   .background {
     height: 50vh;
+    border-radius: 0px;
   }
 
   .background h1 {
